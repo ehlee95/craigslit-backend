@@ -1,0 +1,1 @@
+web gunicorn craigslitproject.wsgi:application --log-file -
