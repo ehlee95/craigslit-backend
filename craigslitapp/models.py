@@ -11,6 +11,7 @@ class Post(models.Model):
     size = models.CharField(max_length=128, default="")
     notes = models.CharField(max_length=128, default="")
     created = models.DateTimeField(auto_now_add=False, null=True, blank=True)
+    listingtype = models.CharField(max_length=128, default="")
 
     def __str__(self):
         return self.title
