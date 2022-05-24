@@ -9,8 +9,8 @@ class Post(models.Model):
     location = models.CharField(max_length=128, default="")
     condition = models.CharField(max_length=128, default="")
     size = models.CharField(max_length=128, default="")
-    notes = models.CharField(max_length=128, default="")
-    created = models.DateTimeField(auto_now_add=False, null=True, blank=True)
+    imageid = models.CharField(max_length=128, default="")
+    created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     listingtype = models.CharField(max_length=128, default="")
 
     def __str__(self):
